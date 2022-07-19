@@ -1,9 +1,16 @@
-from turtle import title
+"""
+Creating indexView for crud operations and render to an index.html page.
+"""
+
+# from turtle import title
 from django.shortcuts import render
-from exp.models import Post, Comment
+from exp.models import Post
 
 # Create your views here.
-def indexView(request):
+def index_view(request):
+    """
+    Perform CRUD operations using ORM and render to html page.
+    """
     # Post.objects.create(title="abc", text="abc abc")
     # deldata = Post.objects.get(id=4)
     # deldata.delete()
